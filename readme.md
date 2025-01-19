@@ -2,13 +2,15 @@
 ![F-MbY2FXUAAk21P](https://github.com/bassusteur/milkv-duo-ubuntu/assets/42449683/3dcdbd84-12a6-4c86-969c-92a2e9e92496)
 
 ## Credits
-![great friend julie](https://github.com/tvlad1234)
-![rootfs guide for risc-v](https://github.com/carlosedp/riscv-bringup/blob/master/Ubuntu-Rootfs-Guide.md)
-![DO NOT THE CAT!!!](https://github.com/Mnux9)
+[great friend julie](https://github.com/tvlad1234)
+
+[rootfs guide for risc-v](https://github.com/carlosedp/riscv-bringup/blob/master/Ubuntu-Rootfs-Guide.md)
+
+[DO NOT THE CAT!!!](https://github.com/Mnux9)
 
 ## Setup 
 1. Ubuntu 22.04 LTS installed on a virtual machine
-2. Setup ![duo-buildroot-sdk](https://github.com/milkv-duo/duo-buildroot-sdk#prepare-the-compilation-environment) on your machine
+2. Setup [duo-buildroot-sdk](https://github.com/milkv-duo/duo-buildroot-sdk#prepare-the-compilation-environment) on your machine
 
 ## Before anything else
 ```bash
@@ -39,10 +41,10 @@ CONFIG_FANOTIFY
 CONFIG_ZSMALLOC=y
 CONFIG_ZRAM=y
 ```
-Important: to reduce ram usage follow point n.2 of the ![faq](https://github.com/milkv-duo/duo-buildroot-sdk/tree/develop#faqs), 
+Important: to reduce ram usage follow point n.2 of the [faq](https://github.com/milkv-duo/duo-buildroot-sdk/tree/develop#faqs), 
 to increase the rootfs partition size you can edit ```duo-buildroot-sdk/milkv/genimage-milkv-duo.cfg```
 at line 16 replace ```size = 256M``` with ```size = 1G``` or higher as desired
-then follow the ![instructions](https://github.com/milkv-duo/duo-buildroot-sdk#step-by-step-compilation) to manually compile buildroot and the kernel and pack it. 
+then follow the [instructions](https://github.com/milkv-duo/duo-buildroot-sdk#step-by-step-compilation) to manually compile buildroot and the kernel and pack it. 
 
 ## Creating the rootfs
 ```bash
